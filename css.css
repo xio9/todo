@@ -1,0 +1,72 @@
+body{
+   background-color: #f3f3f3;
+   box-sizing: border-box;
+}
+.todo{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 150px;
+  flex-direction: column;
+}
+.heading-lil{
+  margin-top: 100px
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.task-text{
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px 5px;
+  align-items: center;
+  text-align: center;
+  border-radius: 1px solid #ACBEF2;
+  background-color: #ABA5E8;
+}
+.task-done{
+    background: red;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 10px 5px;
+    align-items: center;
+    text-align: center;
+}
+.btnAdd,
+.btnDelete{
+  margin-top: 20px;
+}
+.urLocation{
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-size: 36px;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+.btns{
+  display: block;
+}
+.btnAdd,
+.btnDelete{
+  outline: none;
+  cursor: pointer;
+    margin-right: 20px;
+}
+/* .btnAdd:hover,
+.btnDelete:hover{
+  transition: all ease 500ms;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.08);
+  transform: scale(1.1);
+} */
+.task{
+  display: block;
+}
+.lineTrtough{
+  text-decoration: line-through;
+}
