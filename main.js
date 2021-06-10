@@ -35,7 +35,7 @@ function displayMessage(){
   tasks.forEach( function(item, i){
     name += `
     <div class="task">
-      <input type="checkbox" id='item_${i}'
+      <input type="checkbox" id='item_${i+1}'
       <div class="task-text card">${item}</div>
     </div>
     `;
@@ -43,22 +43,20 @@ function displayMessage(){
   });
 }
 
-
-function checkboxCheck(){
-  if(checkbox.checked){
-    task.classList.add("lineTrtough");
-    console.log("yup");
-  }
-}
-
-
-
-checkbox.forEach( function(item, i){
-  checkbox.addEventListener('change', () => {
-    checkboxCheck();
-        console.log("yup");
-  });
-})
+// function checkboxCheck(){
+//   if(checkbox.checked){
+//     task.classList.add("lineTrtough");
+//     console.log("yup");
+//   }
+// }
+//
+//
+// checkbox.forEach( function(){
+//   checkbox.addEventListener('change', () => {
+//     checkboxCheck();
+//     console.log("yup1");
+//   });
+// })
 
 
 btnAdd.addEventListener('click', () => {
